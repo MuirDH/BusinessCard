@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_business_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.android.businesscard.MainBusinessCard">
+
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/image_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/trailblazerstimetable"
+        android:contentDescription="@string/trailblazer_timetable_image_desc" />
+
+    <TextView
+        android:id="@+id/header"
+        style="@style/PrimaryWidthHeight"
+        android:layout_margin="@dimen/text_margin"
+        android:gravity="start"
+        android:text= "@string/business_name"
+        android:textSize="@dimen/header_textsize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/PrimaryWidthHeight"
+        android:layout_margin="@dimen/text_margin"
+        android:text="@string/placeholder_text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/PrimaryWidthHeight"
+            android:layout_margin="@dimen/scroll_text_margin"
+            android:gravity="start"
+            android:text="@string/description_text"
+            android:textSize="@dimen/scroll_textsize"
+            android:paddingBottom="@dimen/scroll_text_bottom_padding"/>
+
+    </ScrollView>
+</LinearLayout>
+
+
+
+
